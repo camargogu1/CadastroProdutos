@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Cadastrados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="padding-left: 2%;" href="index.html">Controle de Produtos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#vitrine">Cadastrados</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="geral">
+        <div id="alert" style="width: 40%;">
+            <div class="alert alert-light text-center" role="alert">
+                Produtos Cadastrados
+            </div>
+        </div>
+
+
+
+        <div class="opc">
+            <button type="button" class="btn btn-primary" id="todos">Exibir todos</button>
+            <button type="button" class="btn btn-success d-none d-lg-block" id="ordenaP">Ordenar por Preço
+            </button>
+            <button type="button" class="btn btn-danger" id="limpar">Limpar</button>
+            <div class="input-group" >
+                <input type="search" class="form-control rounded" id="pesquisa" placeholder="Pesquisar Produto"
+                    aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary" id="search">🔎</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="subvitrine">
+        <div id="vitrine">
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+    
+    <script src="filtros.js"></script>
+    <script src="./model/model.js"></script>
+    <script src="./persistencia/produtoDAO.js"></script>
+    <script src="./controle/control.js"></script>
+    <script src="exibir.js"></script>
+</body>
+
+</html>
