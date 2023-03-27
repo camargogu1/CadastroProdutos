@@ -37,7 +37,7 @@ function getdados() {
 
 function verifica() {
     console.log("oi")
-    if (nomehtml.value == "" || precohtml == "" || estoquehtml == "" || fornecedorhtml == "") {
+    if (nomehtml.value == '' || precohtml.value == '' || estoquehtml.value == '' || fornecedorhtml.value == '') {
         alert("Preencha todos os campos!")
         return false
     }

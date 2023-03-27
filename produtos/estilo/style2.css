@@ -1,0 +1,120 @@
+
+body{
+    background-image: linear-gradient(to right top, #2a63ca, #0081d2, #0094b4, #009f81, #53a551);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.cadastro{
+    display: flex;
+    margin-top: 3%;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center  ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input{
+    text-align: center;
+}
+
+.subvitrine{
+    justify-content: space-around;
+    display: flex;
+    align-items: right;
+    flex-direction: row;
+    
+
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #fff;
+}
+
+#vitrine{
+    display: flex;
+    align-items:start;
+    justify-content: space-around;
+    width: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+   
+}
+
+.geral{
+    padding-top: 15%;
+    border: 10px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.card{
+    width: 33%;
+    margin-bottom: 2%;
+}
+
+.individual{
+    color: red;
+    border: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form{
+    padding: 3%;
+    width: 40%;
+}
+
+#alert{
+    padding: 2%;
+}
+
+.opc{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.btn{
+    display: flex;
+}
+
+@media (max-width: 480px)
+{
+    .btn-outline-success
+    {
+        display: none;
+    }
+    input{
+        font-size: small !important;
+    }
+    .card{
+        width: 50% !important;
+    }
+    .vitrine{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    
+}
